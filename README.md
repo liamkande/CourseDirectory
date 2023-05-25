@@ -1,46 +1,54 @@
-# Getting Started with Create React App
+# Course Directory Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Course Directory Web App is a web application that allows you to browse and discover various courses on different topics. You can view a list of available courses, search for specific courses by topic or teacher, and get detailed information about each course.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View a list of available courses
+- Search for courses by topic or teacher
+- Get detailed information about each course
+- Navigate through different sections of the web app
+- Responsive design for seamless usage on different devices
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React: A JavaScript library for building user interfaces
+- TypeScript: A typed superset of JavaScript that compiles to plain JavaScript
+- HTML: The standard markup language for creating web pages
+- CSS: A style sheet language used for describing the presentation of a document written in HTML
+- React Router: A routing library for React applications
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+To get started with the Course Directory Web App, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository: `https://github.com/liamkande/CourseDirectory.git`
+2. Navigate to the project directory: `cd CourseDirectory`
+3. Install the dependencies: `yarn install`
+4. Start the application: `yarn start`
+5. Open your web browser and visit: `http://localhost:3000`
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Upon launching the application, you will be presented with the home page where you can browse the available courses.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Use the navigation menu to explore different sections of the web app, such as About, Teachers, and Courses.
+- In the Courses section, you can search for courses by entering a topic or teacher's name in the search input field.
+- Click on a course to view its detailed information, including the course title, description, and instructor.
+- Navigate back to the home page or other sections using the navigation menu.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributing
 
-### `npm run eject`
+Contributions are welcome! If you find a bug or have a feature request, please open an issue on the GitHub repository. If you'd like to contribute code, feel free to open a pull request with your changes.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## License
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project is licensed under the MIT License.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Acknowledgements
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This project was developed as a learning exercise and is not affiliated with any existing course directory platform.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Enjoy exploring and discovering new courses with the Course Directory Web App! If you have any questions or need further assistance, please don't hesitate to reach out.
