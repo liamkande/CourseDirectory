@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { RouteComponentProps, useHistory } from 'react-router-dom';
 
-
 const Home: React.FC<RouteComponentProps> = ({ history }) => {
   const [teacherName, setTeacherName] = useState('');
   const [teacherTopic, setTeacherTopic] = useState('');
