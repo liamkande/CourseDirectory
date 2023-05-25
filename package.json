@@ -43,5 +43,11 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.3.3"
-  }
+  },
+  "description": "Course Directory Web App",
+  "main": "index.js",
+  "repository": "https://github.com/liamkande/CourseDirectory.git",
+  "author": "Liam Ansoumane Kande",
+  "homepage": ".",
+  "license": "MIT"
 }
