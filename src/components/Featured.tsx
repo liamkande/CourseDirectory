@@ -1,13 +1,13 @@
-import React from "react"
-import { RouteComponentProps } from "react-router-dom"
+import React from "react";
+import { RouteComponentProps } from "react-router-dom";
 
 interface MatchParams {
-  name: string
-  topic: string
+  name: string;
+  topic: string;
 }
 
 const Featured: React.FC<RouteComponentProps<MatchParams>> = ({ match }) => {
-  const { name, topic } = match.params
+  const { name, topic } = match.params;
 
   return (
     <div className="main-content">
@@ -17,7 +17,7 @@ const Featured: React.FC<RouteComponentProps<MatchParams>> = ({ match }) => {
         courses about <strong>{topic}</strong>!
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default Featured
+export default Featured;

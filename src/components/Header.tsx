@@ -1,11 +1,11 @@
-import React from "react"
-import { NavLink } from "react-router-dom"
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Header: React.FC = () => (
   <header>
-    <span className="icn-logo">
+    <div className="icn-logo">
       <i className="material-icons">code</i>
-    </span>
+    </div>
     <ul className="main-nav">
       <li>
         <NavLink exact to="/">
@@ -23,5 +23,6 @@ const Header: React.FC = () => (
       </li>
     </ul>
   </header>
-)
-export default Header
+);
+
+export default Header;

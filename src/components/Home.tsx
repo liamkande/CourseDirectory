@@ -1,27 +1,32 @@
-import React, { useRef } from "react"
-import { useHistory } from "react-router-dom";
+import React, { useState } from 'react';
+import { RouteComponentProps, useHistory } from 'react-router-dom';
 
-const Home: React.FC = () => {
-  const nameRef = useRef<HTMLInputElement>(null)
-  const topicRef = useRef<HTMLInputElement>(null)
-  let history = useHistory()
- 
+interface MatchParams {
+  topic: string;
+  name: string;
+}
+
+const Home: React.FC<RouteComponentProps> = ({ history }) => {
+  const [teacherName, setTeacherName] = useState('');
+  const [teacherTopic, setTeacherTopic] = useState('');
+  const routeHistory = useHistory();
+
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (nameRef.current && topicRef.current) {
-      const teacherName = nameRef.current.value
-      const teacherTopic = topicRef.current.value
-      const path = `teachers/${teacherTopic}/${teacherName}`
-      history.push(path)
+    e.preventDefault();
+    if (teacherName && teacherTopic) {
+      const path = `/teachers/${teacherTopic}/${teacherName}`;
+      routeHistory.push(path);
+    } else {
+      alert('Please enter both a teacher name and a topic before searching.');
     }
-  }
+  };
 
   return (
     <div className="main-content home">
       <h2>Front End Course Directory</h2>
       <p>
-        Learn front end web development and much more! This simple directory app
-        offers a preview of our course library. Choose from many hours of
+        Learn front end web development and much more! This simple directory
+        app offers a preview of our course library. Choose from many hours of
         content, from HTML to CSS to JavaScript. Learn to code and get the
         skills you need to launch a new career in front end web development.
       </p>
@@ -33,12 +38,22 @@ const Home: React.FC = () => {
       <hr />
       <h3>Featured Teachers</h3>
       <form onSubmit={handleSubmit}>
-        <input type="text" placeholder="Name" ref={nameRef} />
-        <input type="text" placeholder="Topic" ref={topicRef} />
+        <input
+          type="text"
+          placeholder="Name"
+          value={teacherName}
+          onChange={(e) => setTeacherName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Topic"
+          value={teacherTopic}
+          onChange={(e) => setTeacherTopic(e.target.value)}
+        />
         <button type="submit">Go!</button>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
